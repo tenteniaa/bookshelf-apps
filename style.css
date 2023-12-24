@@ -115,6 +115,7 @@ main {
 .search_section > form > input {
     padding: 5px;
     border-radius: 5px;
+    width: 100%;
 }
 
 .search_section > form > button {
