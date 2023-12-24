@@ -105,8 +105,16 @@ function addBook() {
     const todoObject = generateTodoObect(generatedID, inputTitle, inputAuthor, inputYear, isCompleted);
     bookShelf.push(todoObject);
 
+    // Clear input fields
+    document.getElementById('inputBookTitle').value = '';
+    document.getElementById('inputBookAuthor').value = '';
+    document.getElementById('inputBookYear').value = '';
+    document.getElementById('inputBookIsComplete').checked = false;
+
     document.dispatchEvent(new Event(RENDER_EVENT));
     saveData();
+
+    alert('Buku berhasil ditambahkan!')
 }   
 
 function addBookToCompleted(todoId) {
