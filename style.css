@@ -22,9 +22,20 @@ input, button {
 }
 
 main {
-    max-width: 800px;
     margin: 0 auto;
     padding: 16px;
+}
+
+@media screen and (min-width: 991px) {
+    main {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    h2 {
+        font-size: 20px;
+    }
 }
 
 .input_section {
