@@ -23,10 +23,8 @@ input, button {
 
 main {
     max-width: 800px;
-    width: 80%;
     margin: 0 auto;
     padding: 16px;
-
 }
 
 .input_section {
